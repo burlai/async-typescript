@@ -1,24 +1,18 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import "./style.css";
+import typescriptLogo from "./assets/typescript.svg";
+import jsLogo from "./assets/js-logo.png";
+import { exampleFunction } from "./exampleFunction.ts";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
+    <img src="${jsLogo}" class="logo" alt="Vite logo" />
+    <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
+    <h1 class="heading">Async JS • TS</h1>
+    <h2><a href="https://www.youtube.com/@SimpleFrontendUA" class="sub-heading" target="_blank">Простий Фронтенд</a></h2>
     <div class="card">
-      <button id="counter" type="button"></button>
+      <button id="dummyButton" type="button">Click me</button>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
   </div>
-`
+`;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+exampleFunction(document.querySelector<HTMLButtonElement>("#dummyButton")!);

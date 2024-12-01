@@ -27,7 +27,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 h1 {
@@ -44,7 +44,8 @@ h1 {
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 1.2em;
+  padding-bottom: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -93,4 +94,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.heading {
+  color: #333;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.sub-heading {
+  color: #e963c4;
 }
